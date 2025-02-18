@@ -20,31 +20,32 @@
             <a href="#">Contact</a>
         </nav>
     </header>
-    <section id="input-section">
-        <form id="input-form">
-            <label for="country">Enter Country :</label>
-            <input type="text" id="country" name="country" placeholder="Enter City, Country" required><br><br>
-            <label for="date">Enter Date :</label>
-            <input type="date" id="date" name="date" required><br><br>
-            <button type="submit" id="submit">Submit</button>
-        </form>
-    </section>
-    <section id="output-section" style="display: none;">
-        <label>Results :</label>
-        <p id="time-remaining">Days until travel: N/A</p>
-        <p id="population"></p>
-        <p id="weather"></p>
-        <img id="capital-photo" src="" alt="Capital Photo" />
-    </section>
+    <main>
+        <section id="input-section">
+            <form id="input-form">
+                <label for="country">Enter Country :</label>
+                <input type="text" id="country" name="country" placeholder="Enter City, Country" required><br><br>
+                <label for="date">Enter Date :</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </section>
+        <section id="output-section" style="display: none;">
+            <label>Results :</label>
+            <p id="time-remaining">Days until travel: N/A</p>
+            <p id="population"></p>
+            <p id="weather"></p>
+            <img id="capital-photo" src="" alt="Capital Photo" />
+        </section>
 
-    <section id="saved-tickets">
-        <h3>My Saved Tickets</h3>
-        <div id="tickets-list"></div>
-    </section>
-    
-<footer>
-    <p> Seema Nassar © 2025 </p>
-</footer>
+        <section id="saved-tickets">
+            <h3>My Saved Tickets</h3>
+            <div id="tickets-list"></div>
+        </section>
+    </main> 
+    <footer>
+        <p> Seema Nassar © 2025 </p>
+    </footer>
 <!-- <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

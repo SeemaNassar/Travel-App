@@ -1,6 +1,7 @@
 // Input Section styles
 #input-section {
     max-width: 600px;
+    width: 100%;
     margin: 30px auto;
     background-color: white;
     padding: 30px;
@@ -10,6 +11,7 @@
     form {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         label {
             font-size: 1rem;
@@ -19,15 +21,20 @@
 
         input[type="text"],
         input[type="date"] {
+            width: 100%;      
+            max-width: 400px; 
             padding: 10px;
             font-size: 1rem;
             border: 1px solid #ddd;
             border-radius: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            box-sizing: border-box; 
             transition: border 0.3s ease;
+        
+            height: 40px;    
             
             &:focus {
-                border-color: $primary-color;
+                border-color: $primary-color; 
             }
         }
 
