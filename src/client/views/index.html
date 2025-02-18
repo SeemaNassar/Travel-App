@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Travel App</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#saved-tickets" id="show-tickets-btn">my Tickets</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section id="input-section">
+        <form id="input-form">
+            <label for="country">Enter Country :</label>
+            <input type="text" id="country" name="country" placeholder="Enter City, Country" required><br><br>
+            <label for="date">Enter Date :</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </section>
+    <section id="output-section" style="display: none;">
+        <label>Results :</label>
+        <p id="time-remaining">Days until travel: N/A</p>
+        <p id="population"></p>
+        <p id="weather"></p>
+        <img id="capital-photo" src="" alt="Capital Photo" />
+    </section>
+
+    <section id="saved-tickets">
+        <h3>My Saved Tickets</h3>
+        <div id="tickets-list"></div>
+    </section>
+    
+<footer>
+    <p> Seema Nassar © 2025 </p>
+</footer>
+<!-- <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        });
+    }
+
+</script> -->
+</body>
+
+</html>

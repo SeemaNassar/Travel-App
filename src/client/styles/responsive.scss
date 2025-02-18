@@ -1,0 +1,12 @@
+// Responsive Design
+@media (max-width: 768px) {
+    #input-section,
+    #output-section {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .navigation a {
+        margin: 0 10px;
+    }
+}

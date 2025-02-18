@@ -1,0 +1,171 @@
+// Output Section styles (Tickets Design)
+#output-section {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 10px 0;
+        line-height: 1.4;
+    }
+
+    #time-remaining {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $secondary-color;
+    }
+
+    #capital-photo {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .ticket {
+        background: linear-gradient(145deg, #ffffff, #f1f1f1);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+
+        &.active {
+            background-color: #f9f9f9;
+        }
+
+        .ticket-header {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .ticket-body {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .ticket-footer {
+            font-size: 0.9rem;
+            color: gray;
+        }
+    }
+}
+
+#saved-tickets {
+    margin-top: 20px;
+
+    h3{
+        padding-bottom: 12px ;
+        padding-left: 10px;
+    }
+}
+
+
+#tickets-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexibility to adjust based on screen size */
+    gap: 15px; /* Space between tickets */
+}
+
+.ticket {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To make sure content doesn’t overflow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.ticket:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.ticket img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ticket h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.ticket p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.ticket p strong {
+    font-weight: bold;
+    color: #333;
+}
+.ticket {
+    position: relative;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+}
+
+.ticket img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ticket h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.ticket p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.ticket p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    background-color: darkred;
+}
+
