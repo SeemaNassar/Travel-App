@@ -25,7 +25,6 @@ The project integrates the following APIs:
 ## Note for API Keys:
 - The app uses three API keys: **Weatherbit API key**, **Pixabay API key**, and **GeoNames username**.
 - The API keys used in **server.js** are stored in the **.env** file.
-- To update API keys in **app.js**, you must open the file and change the keys directly.
 - To update API keys in **server.js**, modify them in the **.env** file.
 
 ## Installation and Running the Project:
@@ -33,21 +32,45 @@ The project integrates the following APIs:
 2. Install the required dependencies:
    ```bash
    npm install
-
+   ```
 3. To build the production version and see the dist files:
    ```bash
    npm run build-prod
+   ```
 4. To start the server and open the app on localhost:4200:
    ```bash
    npm start
+   ```
 5. For development mode and running the app on localhost:3000:
    ```bash
    npm run build-dev
+   ```
 
 ## Tests:
 - To run the test suite:
    ```bash
    npm run test
+   ```
 
-## License:
-MIT License   
+## Deployment with Netlify:
+To deploy your project on Netlify, follow these simple steps:
+
+1. **Push your code to GitHub:** Ensure your project is pushed to a GitHub repository.
+
+2. **Connect with Netlify:** Go to Netlify, sign up or log in, and click "New site from Git".
+
+3. **Choose GitHub:** Authorize Netlify to access your GitHub account and select the repository you want to deploy.
+
+4. **Configure Build Settings:** For most static sites, the default build settings are sufficient. You can specify the build command (e.g., npm run build-prod) and the output directory (e.g., dist).
+
+6. **Environment Variables:** configure the same environment variables (you have them iside .env) on Netlify by add them there.
+
+5. **Deploy:** Click "Deploy site" and let Netlify handle the build and deployment process.
+
+Once deployed, Netlify will provide you with a live URL, which you can use to access your site. You can also set up custom domains and automatic deployments for future updates.
+
+[Visit Travel App](seema-travel-app.netlify.app)
+
+---
+
+Thank you, Seema Nassar.

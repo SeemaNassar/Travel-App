@@ -13,6 +13,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname,'dist'),
+        publicPath: './',
         libraryTarget: 'var',
         library: 'Client'
     
@@ -29,8 +30,18 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-        }
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader",
+                        options: { sourceMap: true } 
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: { sourceMap: true }
+                    }
+                ]
+            }
         ]
     },
     plugins: [
