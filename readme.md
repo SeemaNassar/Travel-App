@@ -27,8 +27,58 @@ The project integrates the following APIs:
 - The API keys used in **server.js** are stored in the **.env** file.
 - To update API keys in **server.js**, modify them in the **.env** file.
 
+## Environment Variables:
+If your project requires any environment variables, create a `.env` file in the root directory and add the necessary variables there.
+
+For example:
+weatherApiKey=YOUR_API_KEY_FOR_THIS_API
+pixabayApiKey=YOUR_API_KEY_FOR_THIS_API
+geonamesUsername=YOUR_API_KEY_FOR_THIS_API
+
+> Note: Here I removed `.env` from `.gitignore` file to make testing easy for you.
+
 ## Installation and Running the Project:
-1. Ensure you are using **Node.js** version `v20.15.1` or higher.
+
+1. Ensure you are using **Node.js** version `v22.12.0` or higher.
+   - **macOS**:  
+     If you don’t have **Node Version Manager (nvm)**, install it using Homebrew:
+     ```bash
+     brew install nvm
+     ```
+
+     Then, install the required **Node.js** version:
+     ```bash
+     nvm install 22.12.0
+     ```
+
+     To use the installed version:
+     ```bash
+     nvm use 22.12.0
+     ```
+
+     Optionally, set it as the default version:
+     ```bash
+     nvm alias default 22.12.0
+     ```
+
+   - **Windows**:  
+     Download and install **nvm for Windows** from the [official release page](https://github.com/coreybutler/nvm-windows/releases).
+     
+     Once **nvm** is installed, run the following to install the desired version of **Node.js**:
+     ```bash
+     nvm install 22.12.0
+     ```
+
+     Then, use the installed version:
+     ```bash
+     nvm use 22.12.0
+     ```
+
+     Optionally, set it as the default version:
+     ```bash
+     nvm alias default 22.12.0
+     ```
+
 2. Install the required dependencies:
    ```bash
    npm install
@@ -69,7 +119,19 @@ To deploy your project on Netlify, follow these simple steps:
 
 Once deployed, Netlify will provide you with a live URL, which you can use to access your site. You can also set up custom domains and automatic deployments for future updates.
 
+
 [Visit Travel App](seema-travel-app.netlify.app)
+   > Note: The Netlify app is not connected to the server side.
+
+So please test the final code using this for client:
+
+   ```bash
+   npm run build-dev
+   ```
+and this for server side:
+   ```bash
+   npm start
+   ```
 
 ---
 

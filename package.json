@@ -1,6 +1,9 @@
 {
   "name": "travel-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "v22.x"
+  },
   "main": "webpack.config.js",
   "scripts": {
     "test": "jest",
